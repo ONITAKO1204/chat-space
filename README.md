@@ -3,8 +3,8 @@
 |------|----|-------|
 |body|text|
 |image|string|
-|user|references|null: false, foreign_key: true|
-|group|references|null: false, foreign_key: true|
+|user_name|references|null: false, foreign_key: true|
+|group_name|references|null: false, foreign_key: true|
 ### Association
 belongs_to :group
 belongs_to :user
@@ -31,8 +31,8 @@ has_many :messages
 ## groups_usersテーブル
 |Column|Type|Options|
 |------|----|-------|
-|user|references|null: false, foreign_key: true|
-|group|references|null: false, foreign_key: true|
+|user_name|references|null: false, foreign_key: true|
+|group_name|references|null: false, foreign_key: true|
 ### Association
 belongs_to :group
 belongs_to :user
