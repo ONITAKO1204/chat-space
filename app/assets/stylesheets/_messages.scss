@@ -15,7 +15,8 @@
     display: flex;
     align-items: center;
     color: #ffffff;
-    .side-box {
+
+    &__box {
       height: 20px;
       width: 260px;
       background-color: #253141;
@@ -24,10 +25,12 @@
       display: flex;
       justify-content: space-between;
       font-weight: bold;
-      .new-group {
+
+      &__menu {
         display: flex;
         justify-content: flex-end;
         width: 60px;
+        
         .far {
           color: #ffffff;
           text-decoration: none;
@@ -49,11 +52,12 @@
       color: #ffffff;
       text-decoration: none;
       margin-bottom: 40px;
-      .group__group-name {
+
+      &__group-name {
         font-size: 15px;
         margin-bottom: 5px;
       }
-      .group__latest-message {
+      &__latest-message {
         font-size: 11px;
       }
       }
@@ -70,19 +74,21 @@
       justify-content: space-between;
       background-color: #ffffff;
       border-bottom: 1px solid #eeeeee;
-      .main-header__left-box {
+
+      &__left-box {
         margin-top: 35px;
-        .main-header__left-box__current-group {
+
+        &__current-group {
           font-size: 20px;
           color: #333333;
           margin-bottom: 15px;
         }
-        .main-header__left-box__member-list {
+        &__member-list {
           display: flex;
           font-size: 12px;
           color: #999999;
           
-          .main-header__left-box__member-list__member {
+          &__member {
  
           }
          }
@@ -107,21 +113,23 @@
     padding: 40px 46px;
     .message {
       padding-bottom: 40px;
-      .message__upper-info {
+
+      &__upper-info {
         display: flex;
         margin-bottom: 10px;
-        .message__upper-info__talker {
+
+        &__talker {
           color: #434a54;
           font-size: 16px;
           font-weight: bold;
         }
-        .message__upper-info__date {
+        &__date {
           color: #999999;
           font-size: 12px;
           margin-left: 10px;
         }
       }
-      .message__text {
+      &__text {
         color: #434a54;
         font-size: 14px;
         margin-bottom: 10px;
