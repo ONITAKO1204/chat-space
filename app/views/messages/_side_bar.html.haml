@@ -1,0 +1,18 @@
+.chat-side
+ .side-header
+  .side-header__box
+   %p.user-name masa
+   %ul.side-header__box__menu
+    %li.contents__btn
+     = link_to "#" do
+      = icon('far', 'edit')
+    %li.contents___btn
+     = link_to "#" do
+      = icon('fas', 'cog')
+     
+ .groups
+  = link_to "#", class:"group" do
+   %p.group__group-name
+    グループ名
+   %p.group__latest-message
+    まだメッセージがありません
