@@ -99,8 +99,9 @@ $('#new_message').on('submit', function(e){
   .always(function() {
     $('.submit-btn').prop('disabled', false);
 });
+
 })
-setInterval(reloadMessages, 7000);
+
 if (document.location.href.match(/\/groups\/\d+\/messages/)) {
   setInterval(reloadMessages, 7000);
 }
